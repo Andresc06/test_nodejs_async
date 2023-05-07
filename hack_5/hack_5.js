@@ -1,3 +1,4 @@
+const axios = require("axios");
 /*
 - Mediante la libreria: axios
 - Hacer una petición de tipo: DELETE
@@ -6,7 +7,10 @@
 */
 
 async function fnTest() {
-  //...
+  
+  const url = 'https://jsonplaceholder.typicode.com/posts/1';
+
+  const response = await axios.delete(url);
   return response;
 }
 
